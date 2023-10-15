@@ -91,6 +91,8 @@ class _UpdateTaskState extends State<UpdateTask> {
                               if (_globalKey.currentState!.validate()) {
                                 widget.update(widget.indx, titleController.text,
                                     subtitleController.text);
+
+
                               }
                               if (titleController.text.isNotEmpty &&
                                   subtitleController.text.isNotEmpty) {

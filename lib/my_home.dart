@@ -106,6 +106,7 @@ class _MyHomeState extends State<MyHome> {
               onPressed: () {
                 if (_globalKey.currentState!.validate()) {
                   addTask(titleController.text, subTitleController.text);
+                  FocusScope.of(context).unfocus();
                   setState(() {});
                 }
               },
